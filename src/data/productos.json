@@ -1,0 +1,379 @@
+[
+  {
+    "title": "articulo Modificado",
+    "description": "descripcion modificada",
+    "price": 150,
+    "code": "art  Modificado",
+    "stock": 100,
+    "id": 1,
+    "status": true
+  },
+  {
+    "title": "Cámara Seguridad HD 1080p",
+    "description": "Desc producto Router",
+    "price": 18,
+    "code": "cam",
+    "stock": 15,
+    "id": 2
+  },
+  {
+    "title": "Kit 4 Cámaras Ip",
+    "description": "Desc producto Router",
+    "price": 45,
+    "code": "ip",
+    "stock": 20,
+    "id": 3
+  },
+  {
+    "title": "articulo Modificado",
+    "description": "descripcion modificada",
+    "price": 150,
+    "code": "art  Modificado",
+    "stock": 100,
+    "id": 4,
+    "status": true,
+    "category": "categoria  Modificado"
+  },
+  {
+    "title": "Dvr Xvr Seguridad",
+    "description": "Desc producto Router",
+    "price": 39,
+    "code": "dvr",
+    "stock": 30,
+    "id": 5
+  },
+  {
+    "title": "Kit De 2 Cámaras Ip Wifi ",
+    "description": "Desc producto Router",
+    "price": 40.193,
+    "code": "ip",
+    "stock": 35,
+    "id": 6
+  },
+  {
+    "title": "Mini Cámara Domo",
+    "description": "Desc producto Router",
+    "price": 14.679,
+    "code": "qwerty",
+    "stock": 100,
+    "id": 7
+  },
+  {
+    "title": "Foco Cámara Lampara",
+    "description": "Desc producto Router",
+    "price": 13.5,
+    "code": "cam",
+    "stock": 80,
+    "id": 8
+  },
+  {
+    "title": "Domo Ip 3mpx",
+    "description": "Desc producto Router",
+    "price": 33.725,
+    "code": "ip",
+    "stock": 60,
+    "id": 9
+  },
+  {
+    "title": "Domo Zonex 3mpx Doble Lente",
+    "description": "Desc producto Router",
+    "price": 39.9,
+    "code": "domo",
+    "stock": 45,
+    "id": 10
+  },
+  {
+    "title": "articulo 1",
+    "description": "descripcion",
+    "code": "art 1",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 11
+  },
+  {
+    "title": "articulo 2",
+    "description": "descripcion",
+    "code": "art 2",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 12
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 13
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 14
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 15
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 16
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 17
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 18
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 19
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 20
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 21
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 22
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 23
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 24
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 25
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 26
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 27
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "_id": 28
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 29
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 30
+  },
+  {
+    "title": "articulo 3",
+    "description": "descripcion",
+    "code": "art 3",
+    "price": 150,
+    "status": true,
+    "stock": 100,
+    "category": "categoria",
+    "thumbnails": [
+      "imagen1.png",
+      "imagen2.png"
+    ],
+    "id": 31
+  }
+]
