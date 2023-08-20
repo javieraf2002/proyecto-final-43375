@@ -1,0 +1,34 @@
+<form action="/products/" method="GET">
+    <input type="text" name="query" id="query">
+    <button type="submit">Filtrar por Categoria</button>
+    <a href="/products/?sort=asc">Orden Ascendente</a>
+    <a href="/products/?sort=desc">Orden Descendente</a>
+</form>
+
+<table id="products">
+
+    <tr>
+        <th>Producto</th>
+        <th>Categoria</th>
+        <th>Precio</th>
+        <th>Stock</th>
+    </tr>
+
+    {{#each products.docs}}
+    <tr>
+        <td>{{this.title}}</td>
+        <td>{{this.category}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.stock}}</td>
+    </tr>
+    {{/each}}
+
+</table>
+
+{{#if products.hasPrevPage}}
+<a href="/products/?page={{products.prevPage}}">Pagina previa</a>
+{{/if}}
+
+{{#if products.hasNextPage}}
+<a href="/products/?page={{products.nextPage}}">Pagina siguiente</a>
+{{/if}}

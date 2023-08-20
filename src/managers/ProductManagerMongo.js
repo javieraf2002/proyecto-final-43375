@@ -10,6 +10,11 @@ class ProductsManagerMongo {
         return products.map(p => p.toObject())
     }
 
+    async getAllProductsPaginate(query, params) {
+        const products = await this.model.paginate(query, params)
+        return products
+    }
+
     async getProductById(pid) {
         const product = await this.model.findById(pid)
         if (!product) {
