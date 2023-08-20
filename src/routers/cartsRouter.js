@@ -58,6 +58,7 @@ const cartsRouterFn = (myCartManager) => {
             await myCartManager.deleteCart(id)
             return res.status(201).json({ Status: 'Ok' })
         } catch (error) {
+            
             return res.status(404).json({message: error.message})
         }
     })

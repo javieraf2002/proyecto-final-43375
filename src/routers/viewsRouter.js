@@ -34,10 +34,12 @@ const viewsRouterFn = (myProductManager) => {
     })
 
     viewsRouter.get('/cart', (req, res)=>{
+        
         return res.render('cart')
     })
 
     viewsRouter.get('/error', (req, res)=>{
+        
         return res.render('error')
     })
 

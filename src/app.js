@@ -44,3 +44,4 @@ const io = socketServer(httpServer)
 app.use('/api/products', productRouterFn(myProductManager))
 app.use('/api/carts', cartRouterFn(myCartManager))
 app.use('/', viewsRouterFn(myProductManager))
+

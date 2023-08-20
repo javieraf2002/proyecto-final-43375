@@ -11,6 +11,7 @@ const productsRouterFn = (myProductManager) => {
             return res.send(products)
         } else {
             products.splice(limit, [...products].length)
+            
             return res.send(products)
         }
     })
