@@ -5,6 +5,10 @@ const socketServer = require('../src/utils/io')
 const productRouterFn = require('./routers/productsRouter')
 const cartRouterFn = require('./routers/cartsRouter')
 const viewsRouterFn = require('./routers/viewsRouter')
+const sessionRouter = require('./routers/sessionRouter')
+const MongoStore = require('connect-mongo')
+const cookieParser = require('cookie-parser')
+const session = require('express-session')
 
 //PRODUCTOS
 //const productManager = require('./managers/ProductManagerFs')
@@ -24,6 +28,13 @@ const myCartManager = new cartManager()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static('../src/public'))
+app.use(cookieParser())
+app.use(session({
+    store: MongoStore.create({mongoUrl: URI, ttl:60}), //60 segundos
+    secret: 'secretSession',
+    resave: true,
+    saveUninitialized: true
+}))
 
 app.engine('handlebars', handlebars.engine())
 app.set('views', '../src/views')
@@ -43,5 +54,6 @@ const io = socketServer(httpServer)
 
 app.use('/api/products', productRouterFn(myProductManager))
 app.use('/api/carts', cartRouterFn(myCartManager))
+app.use('/api/sessions', sessionRouter)
 app.use('/', viewsRouterFn(myProductManager))
 

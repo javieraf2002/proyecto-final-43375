@@ -4,7 +4,23 @@ const viewsRouterFn = (myProductManager) => {
 
     const viewsRouter = Router()
 
-    viewsRouter.get('/products', async (req, res) => {
+    const sessionMiddleware = (req, res, next) => {
+        if (req.session.user) {
+            return res.redirect('/products')
+        }
+        next()
+    }
+
+    const loginMiddleware = (req, res, next)=>{
+        if (!req.session.user) {
+            return res.redirect('/login')
+        }
+        next()
+    }
+
+    /******** P R O D U C T S ********/
+
+    viewsRouter.get('/products', loginMiddleware, async (req, res) => {
 
         const limit = req.query.limit || 10
         const page = req.query.page || 1
@@ -26,21 +42,44 @@ const viewsRouterFn = (myProductManager) => {
 
         const products = await myProductManager.getAllProductsPaginate(filtro, params)
         products.docs = products.docs.map(product => product.toObject())
-        res.render('products', { products })
+        const user = req.session.user
+        res.render('products', { products, user })
     })
 
-    viewsRouter.get('/product', (req, res)=>{
+    viewsRouter.get('/product', loginMiddleware, (req, res) => {
         return res.render('product')
     })
 
-    viewsRouter.get('/cart', (req, res)=>{
-        
+    /******** C A R T S ********/
+
+    viewsRouter.get('/cart', loginMiddleware, (req, res) => {
+
         return res.render('cart')
     })
 
-    viewsRouter.get('/error', (req, res)=>{
-        
+    viewsRouter.get('/error', (req, res) => {
+
         return res.render('error')
+    })
+
+    /******** L O G I N ********/
+
+    viewsRouter.get('/login', sessionMiddleware, (req, res) => {
+        res.render('login')
+    })
+
+    viewsRouter.get('/register', sessionMiddleware, (req, res) => {
+        res.render('register')
+    })
+
+    viewsRouter.get('/profile', (req, res, next) => {
+        if (!req.session.user) {
+            return res.redirect('/login')
+        }
+        return next()
+    }, (req, res) => {
+        const user = req.session.user
+        res.render('profile', { user })
     })
 
     return viewsRouter

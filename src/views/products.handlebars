@@ -1,3 +1,14 @@
+<h2>Bienvenido</h2>
+
+Nombre: {{user.name}}<br><br>
+Apellido: {{user.lastname}}<br><br>
+Edad: {{user.age}}<br><br>
+Email: {{user.email}}
+
+<br><br>
+
+<button onclick="myFunction()">LogOut</button><br><br>
+
 <form action="/products/" method="GET">
     <input type="text" name="query" id="query">
     <button type="submit">Filtrar por Categoria</button>
@@ -32,3 +43,9 @@
 {{#if products.hasNextPage}}
 <a href="/products/?page={{products.nextPage}}">Pagina  siguiente</a>
 {{/if}}
+
+<script>
+    function myFunction() {
+        fetch('/api/sessions/logout')
+    }
+</script>
