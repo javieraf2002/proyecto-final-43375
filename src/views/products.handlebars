@@ -7,7 +7,11 @@ Email: {{user.email}}
 
 <br><br>
 
-<button onclick="myFunction()">LogOut</button><br><br>
+    <form action="/api/sessions/logout" method="get">
+        <input type="submit" value="Logout">
+    </form>
+
+<br>
 
 <form action="/products/" method="GET">
     <input type="text" name="query" id="query">
@@ -37,15 +41,9 @@ Email: {{user.email}}
 </table>
 
 {{#if products.hasPrevPage}}
-<a href="/products/?page={{products.prevPage}}">Pagina  previa</a>
+<a href="/products/?page={{products.prevPage}}">Pagina previa</a>
 {{/if}}
 
 {{#if products.hasNextPage}}
-<a href="/products/?page={{products.nextPage}}">Pagina  siguiente</a>
+<a href="/products/?page={{products.nextPage}}">Pagina siguiente</a>
 {{/if}}
-
-<script>
-    function myFunction() {
-        fetch('/api/sessions/logout')
-    }
-</script>

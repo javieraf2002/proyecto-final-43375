@@ -72,6 +72,10 @@ const viewsRouterFn = (myProductManager) => {
         res.render('register')
     })
 
+    viewsRouter.get('/recovery-password', (req, res) => {
+        res.render('recovery-password')
+    })
+
     viewsRouter.get('/profile', (req, res, next) => {
         if (!req.session.user) {
             return res.redirect('/login')
